@@ -17,6 +17,7 @@ namespace Milho {
         inline static std::unordered_map<std::string, std::shared_ptr<Command>> commands = {};
 
         static int executeDefault(std::string& cmd, std::vector<std::string>& args);
+        static void processArgs(std::string& cmd, std::vector<std::string>& args, std::vector<char *>& argv);
 
         void registerCommand(const char* name);
         
